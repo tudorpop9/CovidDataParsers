@@ -1,0 +1,25 @@
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		
+		BufferedReader dateStart, dateStop;
+		BufferedWriter resultFile;
+		
+		try {
+			dateStart = new BufferedReader(new FileReader("./dateStart.txt"));
+			dateStop = new BufferedReader(new FileReader("./dateStop.txt"));
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+		
+	}
+
+}
